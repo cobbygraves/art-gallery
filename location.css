@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root {
+  --default-black: #151515;
+  --default-brown: #d5966c;
+}
 
 * {
   margin: 0;
@@ -8,20 +11,134 @@
 
 body {
   font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Big Shoulders', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h2 {
+  font-family: 'Big Shoulders', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h3 {
+  font-family: 'Big Shoulders', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.mobile {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--default-black);
+  height: 3rem;
+  width: 70%;
+  border: 0px;
+}
+
+a h3 {
+  color: white;
+  font-size: 1.1rem;
+  /* font-weight: 800; */
+  /* height: 100%; */
+  width: 80%;
+  background-color: var(--default-black);
+}
+
+a div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--default-brown);
+  height: 100%;
+  padding: 1rem;
+  width: 20%;
+}
+
+a img {
+  height: 24px;
+  width: 0.5rem;
+}
+
+.header {
+  position: relative;
+  height: 550px;
+  background: url(./assets/mobile/image-map.png);
+  width: 100%;
+}
+
+.address {
+  height: 493px;
+  background-color: var(--default-black);
+  color: white;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.address h1 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.footer-section {
+  background-color: var(--default-brown);
+  height: 336px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 2rem;
+}
+
+.footer-section p {
+  line-height: 1.7rem;
+}
+
+.social {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
 }
 
 /* Mobile screens */
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
 }
 
 /* Tablet screens */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
 }
 
 /* laptops */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
 }
 
 /* Desktop */
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
 }

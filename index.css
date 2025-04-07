@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Outfit:wght@100..900&display=swap'); */
 
 :root {
   --default-black: #151515;
@@ -13,6 +13,34 @@
 
 body {
   font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Big Shoulders', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h2 {
+  font-family: 'Big Shoulders', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h3 {
+  font-family: 'Big Shoulders', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.mobile {
+  display: block;
 }
 
 .cta {
@@ -44,7 +72,12 @@ body {
   line-height: 1.7rem;
 }
 
-.cta button {
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.cta a {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,16 +87,16 @@ body {
   border: 0px;
 }
 
-.cta button h3 {
+.cta a h3 {
   color: white;
   font-size: 1.1rem;
-  font-weight: 800;
+  /* font-weight: 800; */
   /* height: 100%; */
   width: 80%;
   background-color: var(--default-black);
 }
 
-.cta button div {
+.cta a div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +106,7 @@ body {
   width: 20%;
 }
 
-.cta button img {
+.cta a img {
   height: 24px;
   width: 0.5rem;
 }
@@ -166,17 +199,20 @@ main {
 }
 
 /* Mobile screens */
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
 }
 
 /* Tablet screens */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
 }
 
 /* laptops */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
 }
 
 /* Desktop */
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
 }
