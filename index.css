@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --default-black: #151515;
+  --default-brown: #d5966c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+.cta {
+}
+
+.cta img {
+  width: 100%;
+  height: 240px;
+}
+
+.cta h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+}
+
+.cta section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.cta section p {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+
+.cta button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--default-black);
+  height: 3rem;
+  width: 70%;
+  border: 0px;
+}
+
+.cta button h3 {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 800;
+  /* height: 100%; */
+  width: 80%;
+  background-color: var(--default-black);
+}
+
+.cta button div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--default-brown);
+  height: 100%;
+  padding: 1rem;
+  width: 20%;
+}
+
+.cta button img {
+  height: 24px;
+  width: 0.5rem;
+}
+
+main {
+  margin-top: 50px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.top p {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  width: 95%;
+}
+
+.top img {
+  height: 320px;
+}
+
+.top h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.7rem;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--default-black);
+  color: white;
+  height: 293px;
+  padding: 2rem;
+  margin-top: 0.7rem;
+  line-height: 1.7rem;
+}
+
+.bottom {
+  margin-bottom: 75px;
+}
+
+.bottom h1 {
+  line-height: 2.1rem;
+  font-weight: 800;
+}
+
+.bottom p {
+  margin-top: 0.7rem;
+}
+
+.footer-section {
+  background-color: var(--default-black);
+  height: 336px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  row-gap: 2rem;
+  padding: 2rem;
+}
+
+.footer-section p {
+  line-height: 1.7rem;
+}
+
+.social {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+/* Mobile screens */
+@media screen and (max-width: 375px) {
+}
+
+/* Tablet screens */
+@media screen and (max-width: 768px) {
+}
+
+/* laptops */
+@media screen and (max-width: 1024px) {
+}
+
+/* Desktop */
+@media screen and (max-width: 1440px) {
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Mobile screens */
+@media screen and (max-width: 375px) {
+}
+
+/* Tablet screens */
+@media screen and (max-width: 768px) {
+}
+
+/* laptops */
+@media screen and (max-width: 1024px) {
+}
+
+/* Desktop */
+@media screen and (max-width: 1440px) {
+}
