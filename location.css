@@ -61,7 +61,7 @@ a {
 
 a h3 {
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   /* font-weight: 800; */
   /* height: 100%; */
   width: 80%;
@@ -91,7 +91,7 @@ a img {
 }
 
 .address {
-  height: 493px;
+  height: 470px;
   background-color: var(--default-black);
   color: white;
   padding-left: 1.5rem;
@@ -102,7 +102,25 @@ a img {
 
 .address h1 {
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 2.7rem;
+  margin-bottom: 30px;
+}
+
+.address .address-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.address-container h3 {
+  color: var(--default-brown);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.address-container p {
+  line-height: 1.7rem;
+  width: 95%;
 }
 
 .footer-section {
@@ -112,6 +130,10 @@ a img {
   flex-direction: column;
   row-gap: 2rem;
   padding: 2rem;
+}
+
+.footer-section h2 {
+  font-weight: 600;
 }
 
 .footer-section p {
