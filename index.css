@@ -43,6 +43,10 @@ h3 {
   display: block;
 }
 
+.tablet-latop-desktop {
+  display: none;
+}
+
 .cta {
 }
 
@@ -211,10 +215,47 @@ main {
   .mobile {
     display: none;
   }
+  .tablet-latop-desktop {
+    display: block;
+  }
+  .tablet-latop-desktop .tablet {
+    display: block;
+  }
+
+  .tablet-latop-desktop .laptop {
+    display: none;
+  }
 }
 
 /* laptops */
 @media screen and (min-width: 1024px) {
+  .tablet-latop-desktop .tablet {
+    display: none;
+  }
+
+  .tablet-latop-desktop .laptop {
+    display: block;
+    width: 100%;
+    height: 800px;
+  }
+
+  .laptop-header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 28% auto 28%;
+    height: 100%;
+  }
+  .laptop-header .left {
+    background: var(--default-black);
+  }
+
+  .laptop-header .middle {
+    background: url(./assets/desktop/image-hero.jpg);
+  }
+
+  .laptop-header .right {
+    background: white;
+  }
 }
 
 /* Desktop */
