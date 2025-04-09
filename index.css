@@ -262,11 +262,10 @@ main {
   }
 
   .tablet-header .right .description h1 {
-    font-size: 1.1rem;
     line-height: 2.2rem;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .tablet-header .right .description p {
@@ -282,7 +281,7 @@ main {
     align-items: center;
     background-color: var(--default-black);
     height: 3rem;
-    width: 70%;
+    width: 85%;
     border: 0px;
   }
 
