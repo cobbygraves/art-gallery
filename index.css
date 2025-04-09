@@ -225,6 +225,88 @@ main {
   .tablet-latop-desktop .laptop {
     display: none;
   }
+
+  .tablet-header .tablet {
+    display: block;
+    width: 100%;
+    height: 800px;
+  }
+
+  .tablet-header {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 100%;
+  }
+
+  .tablet-header .left {
+    background: url(./assets/tablet/image-hero.jpg);
+    height: 700px;
+  }
+
+  .tablet-header .right {
+    background: white;
+    height: 700%;
+    position: relative;
+  }
+
+  .tablet-header .right .description {
+    position: absolute;
+    z-index: 4000;
+    right: 17%;
+    top: 3.1%;
+    width: 93%;
+  }
+
+  .tablet-header .right .description h1 {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    margin-bottom: 50px;
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+
+  .tablet-header .right .description p {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin-bottom: 50px;
+  }
+
+  .tablet-header .right a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--default-black);
+    height: 3rem;
+    width: 70%;
+    border: 0px;
+  }
+
+  .tablet-header .right a h3 {
+    color: white;
+    font-size: 1.3rem;
+    /* font-weight: 800; */
+    /* height: 100%; */
+    width: 80%;
+    background-color: var(--default-black);
+  }
+
+  .tablet-header .right a div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--default-brown);
+    height: 100%;
+    padding: 1rem;
+    width: 20%;
+  }
+
+  .tablet-header .right a img {
+    height: 24px;
+    width: 0.5rem;
+  }
 }
 
 /* laptops */
@@ -240,24 +322,217 @@ main {
   }
 
   .laptop-header {
+    position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: 28% auto 28%;
+    grid-template-columns: 30% auto 30%;
     height: 100%;
   }
   .laptop-header .left {
     background: var(--default-black);
+    height: 799px;
   }
 
-  .laptop-header .middle {
-    background: url(./assets/desktop/image-hero.jpg);
+  .laptop-header .middle img {
+    width: 100%;
+    height: 800px;
   }
 
   .laptop-header .right {
     background: white;
   }
+  .laptop-header h1 {
+    position: absolute;
+    color: white;
+    z-index: 3000;
+    left: 16%;
+    top: 20%;
+    font-size: 5rem;
+    font-weight: 800;
+  }
+
+  .laptop-header h1 .lery {
+    color: black;
+  }
+
+  .two-color-text {
+    background: linear-gradient(to right, #ffffff 50%, #000000 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .laptop-header .description {
+    position: absolute;
+    z-index: 3000;
+    right: 11.3%;
+    top: 20%;
+    width: 23%;
+  }
+
+  .laptop-header .description p {
+    /* position: absolute; */
+    z-index: 3000;
+    right: 13%;
+    top: 20%;
+    width: 77%;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    margin-bottom: 50px;
+  }
+
+  .laptop-header a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--default-black);
+    height: 3rem;
+    width: 60%;
+    border: 0px;
+  }
+
+  .laptop-header a h3 {
+    color: white;
+    font-size: 1.3rem;
+    /* font-weight: 800; */
+    /* height: 100%; */
+    width: 80%;
+    background-color: var(--default-black);
+  }
+
+  .laptop-header a div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--default-brown);
+    height: 100%;
+    padding: 1rem;
+    width: 20%;
+  }
+
+  .laptop-header a img {
+    height: 24px;
+    width: 0.5rem;
+  }
 }
 
 /* Desktop */
 @media screen and (min-width: 1440px) {
+  .container {
+    padding-left: 17rem;
+    padding-right: 17rem;
+  }
+
+  .container .day-at-meseum {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 60%;
+
+    margin-bottom: 10px;
+  }
+
+  .container .day-at-meseum .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2%;
+  }
+
+  .container .day-at-meseum .left h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    width: 55%;
+  }
+
+  .container .day-at-meseum .left p {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    width: 65%;
+  }
+
+  .container .day-at-meseum .right {
+    /* background: url(./assets/tablet/image-grid-1.jpg); */
+  }
+
+  .container .day-at-meseum .right img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .gallery-container {
+    display: grid;
+    grid-template-columns: 59% 39%;
+    gap: 2%;
+  }
+
+  .gallery-container .left img {
+    height: 720px;
+    width: 100%;
+  }
+
+  .gallery-container .right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery-container .right img {
+    height: 350px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .gallery-container .dark-box {
+    color: white;
+    height: 350px;
+    width: 100%;
+    background-color: black;
+    padding: 10%;
+  }
+
+  .gallery-container h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+  .gallery-container p {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+  }
+
+  .tablet-latop-desktop footer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height: 244px;
+    background: black;
+    width: 100%;
+    padding-left: 17rem;
+    padding-right: 17rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 50px;
+    color: white;
+  }
+
+  .tablet-latop-desktop footer h1 {
+    font-weight: 800;
+    line-height: 1.7rem;
+  }
+
+  .tablet-latop-desktop footer p {
+    line-height: 1.7rem;
+    font-size: 0.9rem;
+  }
+
+  .social-media {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-self: end;
+    height: fit-content;
+  }
+
+  .social-media img:hover {
+    cursor: pointer;
+  }
 }

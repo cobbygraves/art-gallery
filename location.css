@@ -146,6 +146,10 @@ a img {
   align-items: center;
 }
 
+.tablet-desktop {
+  display: none;
+}
+
 /* Mobile screens */
 @media screen and (min-width: 375px) {
 }
@@ -155,6 +159,129 @@ a img {
   .mobile {
     display: none;
   }
+
+  .tablet-desktop {
+    display: block;
+  }
+
+  .map {
+    position: relative;
+    background: url(./assets/tablet/image-map.png);
+    height: 600px;
+  }
+
+  a {
+    text-decoration: none;
+    text-align: center;
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--default-black);
+    height: 3rem;
+    width: 30%;
+    border: 0px;
+  }
+
+  a h3 {
+    color: white;
+    font-size: 1.3rem;
+    /* font-weight: 800; */
+    /* height: 100%; */
+    width: 80%;
+    background-color: var(--default-black);
+  }
+
+  a div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--default-brown);
+    height: 100%;
+    padding: 1rem;
+    width: 20%;
+  }
+
+  a img {
+    height: 24px;
+    width: 0.5rem;
+  }
+
+  .tablet-location {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+    background: black;
+  }
+
+  .tablet-location h1 {
+    font-size: 2.7rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+  }
+
+  .location-address {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+
+  .tablet-location .location-address h2 {
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+    color: var(--default-brown);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .tablet-location .location-address p {
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+  }
+
+  .tablet-desktop footer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height: 244px;
+    background: var(--default-brown);
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: black;
+  }
+
+  .tablet-desktop footer h1 {
+    font-weight: 800;
+    line-height: 2rem;
+  }
+
+  .tablet-desktop footer p {
+    line-height: 1.7rem;
+    font-size: 0.9rem;
+  }
+
+  .social-media {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-self: end;
+    height: fit-content;
+  }
+
+  .social-media img:hover {
+    cursor: pointer;
+  }
 }
 
 /* laptops */
@@ -163,4 +290,37 @@ a img {
 
 /* Desktop */
 @media screen and (min-width: 1440px) {
+  .map {
+    position: relative;
+    background: url(./assets/desktop/image-map.png);
+    height: 600px;
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--default-black);
+    height: 3rem;
+    width: 15%;
+    border: 0px;
+  }
+
+  .tablet-desktop footer {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .tablet-location h1 {
+    font-size: 3.5rem;
+    line-height: 3.2rem;
+  }
+
+  .tablet-desktop footer p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+  }
 }
