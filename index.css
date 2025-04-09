@@ -241,10 +241,10 @@ main {
     height: 100%;
   }
 
-  .tablet-header .left {
-    background: url(./assets/tablet/image-hero.jpg);
+  .tablet-header .left img {
+    /* background: url(./assets/tablet/image-hero.jpg); */
+    width: 100%;
     height: 700px;
-    background-repeat: no-repeat;
   }
 
   .tablet-header .right {
@@ -321,6 +321,7 @@ main {
     grid-template-columns: 39% 59%;
     column-gap: 2%;
     margin-bottom: 20px;
+    width: 100%;
   }
 
   .quote {
@@ -329,11 +330,11 @@ main {
     justify-content: center;
   }
 
-  .quote-container .quote-image {
+  .quote-container .quote-image img {
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
+    height: 375px;
+    /* display: flex;
+    justify-content: flex-end; */
   }
 
   .tablet-container .quote h2 {
@@ -352,28 +353,38 @@ main {
     display: grid;
     grid-template-columns: 59% 39%;
     column-gap: 2%;
+    height: 750px;
+    overflow-y: hidden;
+  }
+
+  .tablet-container .gallery-cont .gallery_left {
+    width: 100%;
+    height: 100%;
   }
 
   .tablet-container .gallery-cont .gallery_left img {
     width: 100%;
+    height: 100%;
   }
 
   .tablet-container .gallery-cont .gallery_right {
     display: flex;
     flex-direction: column;
     row-gap: 2%;
+    height: 100%;
   }
 
   .tablet-container .gallery-cont .gallery_right .black-box {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column;
     justify-content: center;
-    align-content: center;
-    height: 420px;
+    align-content: center; */
+    min-height: 445px;
     width: 100%;
     background: black;
     color: white;
     padding: 1.5rem;
+    padding-top: 3.5rem;
   }
 
   .tablet-container .gallery-cont .gallery_right .black-box h1 {
@@ -446,7 +457,6 @@ main {
   }
 
   .tablet-container .gallery-cont .gallery_right .black-box {
-    height: 563px;
     width: 100%;
     background: black;
   }
