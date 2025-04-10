@@ -86,7 +86,7 @@ a img {
 .header {
   position: relative;
   height: 550px;
-  background: url(./assets/mobile/image-map.png);
+  background: url(../assets/mobile/image-map.png);
   width: 100%;
 }
 
@@ -166,7 +166,7 @@ a img {
 
   .map {
     position: relative;
-    background: url(./assets/tablet/image-map.png);
+    background: url(../assets/tablet/image-map.png);
     height: 600px;
   }
 
@@ -292,7 +292,7 @@ a img {
 @media screen and (min-width: 1440px) {
   .map {
     position: relative;
-    background: url(./assets/desktop/image-map.png);
+    background: url(../assets/desktop/image-map.png);
     height: 600px;
   }
 
